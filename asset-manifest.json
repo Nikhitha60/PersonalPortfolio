@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/PersonalPortfolio/static/css/main.375434cf.css",
+    "main.js": "/PersonalPortfolio/static/js/main.3d9fb714.js",
+    "static/js/453.ace21015.chunk.js": "/PersonalPortfolio/static/js/453.ace21015.chunk.js",
+    "static/media/home-main.svg": "/PersonalPortfolio/static/media/home-main.3545efc145bf793c0f7eb17f52f078db.svg",
+    "static/media/codeEditor.png": "/PersonalPortfolio/static/media/codeEditor.5a080868b18b61b0487c.png",
+    "static/media/avatar.svg": "/PersonalPortfolio/static/media/avatar.00f38cdaaaf5aa46ec691a696df8790f.svg",
+    "static/media/leaf.png": "/PersonalPortfolio/static/media/leaf.ff2616f664c8c0ceab91.png",
+    "static/media/emotion.png": "/PersonalPortfolio/static/media/emotion.eabfc16e7a146ab15778.png",
+    "static/media/suicide.png": "/PersonalPortfolio/static/media/suicide.9c86cd7138a398c45fa5.png",
+    "static/media/logo.png": "/PersonalPortfolio/static/media/logo.f9e35b24d502aeac2077.png",
+    "static/media/Nikhitha_Resume .pdf": "/PersonalPortfolio/static/media/Nikhitha_Resume .c1bbf44a1b6ff799443c.pdf",
+    "static/media/blog.png": "/PersonalPortfolio/static/media/blog.c007dced4ea6a4ed40a9.png",
+    "static/media/about.png": "/PersonalPortfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/chatify.png": "/PersonalPortfolio/static/media/chatify.174915c23ebb1ee8e366.png",
+    "index.html": "/PersonalPortfolio/index.html",
+    "static/media/pre.svg": "/PersonalPortfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "main.375434cf.css.map": "/PersonalPortfolio/static/css/main.375434cf.css.map",
+    "main.3d9fb714.js.map": "/PersonalPortfolio/static/js/main.3d9fb714.js.map",
+    "453.ace21015.chunk.js.map": "/PersonalPortfolio/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.375434cf.css",
+    "static/js/main.3d9fb714.js"
+  ]
+}
