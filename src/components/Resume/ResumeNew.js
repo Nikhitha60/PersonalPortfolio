@@ -16,11 +16,12 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div>
+    <div className="resume-section">
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
+        <div className="download-button-wrapper">
+          {/* <Button 
             variant="primary"
             href={pdf}
             target="_blank"
@@ -28,7 +29,8 @@ function ResumeNew() {
           >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </Button>
+          </Button> */}
+          </div>
         </Row>
 
         <Row className="resume">
@@ -42,7 +44,17 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            // style={{ maxWidth: "250px"
+            //  }}
+
+             style={{
+              maxWidth: "250px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px", // spacing between icon and text
+            }}
+            
           >
             <AiOutlineDownload />
             &nbsp;Download CV

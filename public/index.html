@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  <html class="dark-theme">
+
 
 <head>
+  <!-- <button onclick="toggleTheme()">Toggle Theme</button> -->
+  <button onclick="setPastelTheme()">Pastel</button>
+
+
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +16,9 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Sai Nikhitha | Portfolio</title>
   <meta name="description" content="Self Developed personal website build with React.js">
+  <!-- Add in <head> or before </body> -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Sai Nikhitha | Portfolio">
@@ -37,5 +46,19 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+
+    if (html.classList.contains("dark-theme")) {
+      html.classList.remove("dark-theme");
+      html.classList.add("light-theme");
+    } else {
+      html.classList.remove("light-theme");
+      html.classList.add("dark-theme");
+    }
+  }
+</script>
+
 
 </html>

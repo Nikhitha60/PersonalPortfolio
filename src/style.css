@@ -151,7 +151,8 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  /* color: rgb(250, 250, 250) !important; */
+  color: var(--text-color) !important;
 }
 
 .logo {
@@ -160,7 +161,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--text-color) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -254,7 +255,7 @@ button:focus {
   padding-top: 80px !important;
 }
 
-.home-section {
+/* .home-section {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
@@ -262,12 +263,29 @@ button:focus {
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+} */
+
+/* .home-section {
+  background: var(--page-bg);
+  background-image: radial-gradient(white 1px, transparent 0), radial-gradient(white 1px, transparent 0);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+} */
+
+.home-section {
+  background: var(--page-bg); /* Or your base background color */
+  background-image: none !important;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
 }
+
+
 
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  color: var(--text-color);
 }
 
 .heading {
@@ -285,13 +303,15 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
+  /* font-size: 2.2em !important;
   color: #be6adf !important;
-  font-weight: 600 !important;
+  font-weight: 600 !important; */
+  color: var(--imp-text-color) !important;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
+  /* font-size: 2.4em !important;
+  color: #b562d6 !important; */
+  color: var(--imp-text-color) !important;
 }
 
 @media (max-width: 767px) {
@@ -324,7 +344,10 @@ button:focus {
 }
 
 .home-about-description {
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
+
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -339,7 +362,9 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
 }
 
 .home-about-social-links {
@@ -352,7 +377,7 @@ button:focus {
 
 .home-social-icons {
   position: relative !important;
-  display: inline-block !important;
+  display: flex !important;
   width: 40px !important;
   height: 40px !important;
   text-align: center !important;
@@ -361,6 +386,10 @@ button:focus {
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
+  justify-content:center;
+  align-items: center;
+  width:50px;
+  height:50px;
 }
 
 .home-social-icons::before {
@@ -428,7 +457,9 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -445,10 +476,15 @@ button:focus {
 /* Projects */
 /* --------- */
 .project-section {
-  position: relative !important;
+  /* position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-image: var(--section-background-color) !important; */
+  background: var(--page-bg) !important;
+  background-image: none !important;
+  color: var(--text-color) !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
 }
 
 .project-card {
@@ -460,8 +496,11 @@ button:focus {
 }
 
 .project-card-view {
+  text-align: center;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -484,13 +523,17 @@ button:focus {
 .blog-card-view {
   background-color: transparent !important;
   box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 
 .blog-link {
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   text-decoration: none !important;
 }
 
@@ -517,13 +560,17 @@ button:focus {
 }
 
 .btn-primary {
-  color: #fff !important;
+  /* color: #fff !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   background-color: #623686 !important;
   border-color: #623686 !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
+  /* color: #fff !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
@@ -532,7 +579,9 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -543,11 +592,16 @@ button:focus {
 /* --------- */
 
 .about-section {
-  position: relative !important;
+  /* position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: white !important; */
+  background: var(--page-bg) !important;
+  background-image: none !important;
+  color: var(--text-color) !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
 }
 
 .tech-icons {
@@ -555,15 +609,23 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
+  display:flex;
   border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
-  display: table !important;
+  /* display: table !important;  */
+  height:100px;
+  width:100px;
+  align-items:center;
+  justify-content:center;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
+
+
+
 
 @media (max-width: 767px) {
   .tech-icons {
@@ -583,7 +645,9 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  /* color: white !important; */
+  color: var(--imp-text-color); /* For accents, names, headings */
+
   background-color: transparent !important;
 }
 
@@ -591,6 +655,7 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+  display:flex;
 }
 
 @media (max-width: 767px) {
@@ -600,18 +665,29 @@ button:focus {
 }
 /* --------- */
 /* Resume */
-/* --------- */
+ ---------
 
 .resume-section {
-  position: relative !important;
+  /* position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: white !important; */
+  background: var(--page-bg) !important;
+  background-image: none !important;
+  color: var(--text-color) !important;
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+ 
+}
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  height: 70px; /* or however tall it is */
 }
 
 .resume {
-  padding-top: 50px;
+  padding-top: 110px;
   padding-bottom: 50px;
   justify-content: center;
 }
@@ -635,6 +711,8 @@ button:focus {
     padding-left: 15px !important;
   }
 }
+
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -741,3 +819,106 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+
+
+
+/* Make sure all sections inherit */
+.about-section,
+.project-section,
+.resume-section,
+.home-section,
+.footer,
+.App {
+  /* background-color: inherit !important;
+  color: inherit !important; */
+  background: var(--page-bg) !important;
+  color: var(--text-color) !important;
+
+
+  .pastel-theme {
+    --page-bg: linear-gradient(to bottom right, #fdf6f0, #fceef5, #fdefff, #fff6e5);
+    --section-background-color: linear-gradient(to bottom left, #fdf6f0, #fceef5);
+    --text-color: #444444;
+    --imp-text-color: #d48dd2;
+    --secondary-purple: #f1d8f3;
+    --card-bg: #ffffff;
+    --card-border: #efd8ec;
+    --button-bg: #d48dd2;
+    --button-hover: #c075bb;
+    --button-text: #ffffff;
+    --box-shadow: 0 4px 12px rgba(212, 141, 210, 0.15);
+  }
+  
+
+.light-theme {
+  /* Backgrounds */
+  --page-bg:#fdf6f0;          
+  --section-background-color: linear-gradient(
+    to bottom left,
+    #f3edf9,
+    #e9def6
+  );
+
+  
+  --text-color: #1e1e2f;       /* Dark charcoal (easy on eyes) */
+
+  /* Accent colors */
+  --imp-text-color: #a34edc;   /* Vibrant purple for highlights */
+  --secondary-purple: #d3b1f5; /* Soft lavender (for borders or backgrounds) */
+
+  /* Cards or blocks */
+  --card-bg: #ffffff;          /* Clean container (you can tweak) */
+  --card-border: #d9c8f5;
+
+  /* Button */
+  --button-bg: #a34edc;
+  --button-hover: #8d3fc2;
+  --button-text: #ffffff;
+
+  /* Shadows */
+  --box-shadow: 0 4px 12px rgba(150, 100, 200, 0.15);
+}
+
+/* .dark-theme {
+  --page-bg: #0c0513;
+  --text-color: #ffffff;
+} */
+
+.dark-theme {
+  --page-bg: #121212;
+  --section-background-color: linear-gradient(to bottom left, #1c1c1c, #121212);
+  --text-color: #ffffff;
+  --imp-text-color: #bb86fc;
+  --secondary-purple: #9a6dd7;
+  --card-bg: #1e1e1e;
+  --card-border: #444444;
+  --button-bg: #bb86fc;
+  --button-hover: #9a6dd7;
+  --button-text: #000000;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+}
+.download-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; /* Push it below navbar */
+  margin-bottom: 40px;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
+
+.section {
+  background: var(--section-background-color);
+  color: var(--text-color);
+}
+

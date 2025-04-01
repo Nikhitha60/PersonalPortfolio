@@ -6,6 +6,10 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+
+// import ToggleModeButton from "./components/ToggleModeButton";
+
+
 import {
   BrowserRouter as Router,
   Route,
@@ -17,8 +21,25 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
+
+// function toggleTheme() {
+//   const root = document.documentElement;
+//   root.classList.toggle("dark-theme");
+//   root.classList.toggle("light-theme");
+// }
+
+function setPastelTheme() {
+  const root = document.documentElement;
+  root.classList.remove("dark-theme", "light-theme");
+  root.classList.add("pastel-theme");
+}
+
+
+
 function App() {
   const [load, upadateLoad] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -31,8 +52,11 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+      {/* <div className="App" id={load ? "no-scroll" : "scroll"}> */}
+      <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`} id={load ? "no-scroll" : "scroll"}>
+
+        {/* <Navbar /> */}
+        <Navbar toggleTheme={() => setIsDarkMode(!isDarkMode)} /> {/* pass toggle */}
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
